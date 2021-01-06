@@ -86,7 +86,7 @@ class SortableTasksIteratorTest extends TestCase
     {
         $sorter = new SortableTasksIterator();
         $this->assertSame(0, $sorter->count());
-        $this->assertSame(0, count($sorter));
+        $this->assertCount(0, $sorter);
     }
 
     public function testGetIteratorWhenIteratorIsEmpty(): void
